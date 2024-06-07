@@ -2,7 +2,8 @@ const {
     add,
     diff,
     prod,
-    div
+    div,
+    sqrt,
 } = require("./math");
 
 describe("Testing the math modules for the assignment",()=>{
@@ -18,4 +19,8 @@ describe("Testing the math modules for the assignment",()=>{
     test("Should divide two numbers", ()=>{
         expect(div(4,2)).toBe(2)
     });
+    test("Should return the square root of a numbe", ()=>{
+        expect(sqrt(100)).toBe(10.00)
+    });
+    
 });
