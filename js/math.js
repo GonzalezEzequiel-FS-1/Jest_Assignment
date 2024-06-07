@@ -1,9 +1,9 @@
-const add=(numOne, numTwo)=> numOne+numTwo;
-const diff=(numOne, numTwo)=> numOne-numTwo;
-const prod=(numOne, numTwo)=> numOne*numTwo;
-const div=(numOne, numTwo)=> numOne/numTwo;
-const sqrt = ( num )=> parseFloat(Math.sqrt(num).toFixed(2));
-const max = (numOne, numTwo) = parseFloat(Math.max(numOne , numTwo).toFixed(2))
+const add=(numOne, numTwo)=> parseInt(numOne+numTwo);
+const diff=(numOne, numTwo)=> parseInt(numOne-numTwo);
+const prod=(numOne, numTwo)=> parseInt(numOne*numTwo);
+const div=(numOne, numTwo)=> parseInt(numOne/numTwo);
+const sqrt = ( num )=> parseInt(Math.sqrt(num));
+const max = (numOne, numTwo) => parseInt(Math.max(numOne , numTwo));
 
 module.exports = {
     add,
