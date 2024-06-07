@@ -1,7 +1,8 @@
 const {
     add,
     diff,
-    prod
+    prod,
+    div
 } = require("./math");
 
 describe("Testing the math modules for the assignment",()=>{
@@ -13,5 +14,8 @@ describe("Testing the math modules for the assignment",()=>{
     });
     test("Should multiply two numbers", ()=>{
         expect(prod(4,2)).toBe(8)
+    });
+    test("Should divide two numbers", ()=>{
+        expect(div(4,2)).toBe(2)
     });
 });
